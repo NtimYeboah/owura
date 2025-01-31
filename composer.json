@@ -1,0 +1,24 @@
+{
+    "name": "ntimyeboah/owura",
+    "description": "AWS Lambda function that sends Cloudtrail management events to Slack",
+    "keywords": [
+        "aws",
+        "lambda",
+        "cloudtrail",
+        "managment",
+        "events",
+        "slack"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ntim Yeboah",
+            "email": "ntimobedyeboah@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "bref/bref": "^2.3",
+        "bref/secrets-loader": "^1.1"
+    }
+}
