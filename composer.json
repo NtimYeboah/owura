@@ -19,6 +19,20 @@
     ],
     "require": {
         "bref/bref": "^2.3",
-        "bref/secrets-loader": "^1.1"
+        "bref/secrets-loader": "^1.1",
+        "ntimyeboah/php-slack": "^0.0.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "NtimYeboah\\Owura\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NtimYeboah\\Owura\\Tests\\": "tests/"
+        }
     }
 }
