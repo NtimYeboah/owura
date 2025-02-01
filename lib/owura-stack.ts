@@ -11,6 +11,10 @@ export class OwuraStack extends cdk.Stack {
     const owuraFunction = new PhpFunction(this, 'Owura', {
       phpVersion: '8.2',
       handler: 'app/index.php',
+      environment: {
+        SLACK_BOT_USER_TOKEN: process.env.SLACK_BOT_USER_TOKEN!,
+        SLACK_CHANNEL: process.env.SLACK_CHANNEL!
+      }
     });
     
     const eventPattern = {
@@ -22,7 +26,7 @@ export class OwuraStack extends cdk.Stack {
       }
     };
 
-    const cloudTrailApiEventPattern = new events.Rule(this, 'ManagementEventsRule', {
+    const cloudTrailApiEventPattern = new events.Rule(this, 'OwuraManagementEventsRule', {
       eventPattern: eventPattern
     });
 

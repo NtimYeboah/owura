@@ -10,7 +10,7 @@ use NtimYeboah\PhpSlack\BlockKit\Blocks\Context as BlocksContext;
 use NtimYeboah\PhpSlack\BlockKit\Blocks\Header;
 use NtimYeboah\PhpSlack\BlockKit\Blocks\Section;
 use NtimYeboah\PhpSlack\SlackMessage;
-use RuntimeException;
+use \RuntimeException;
 
 class EventHandler extends EventBridgeHandler
 {
