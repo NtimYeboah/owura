@@ -3,6 +3,8 @@
 *.d.ts
 node_modules
 vendor
+.env
+.phpunit.result.cache
 
 # CDK asset staging directory
 .cdk.staging
